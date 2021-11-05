@@ -1,0 +1,246 @@
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color80 : rgba(255, 255, 255, 0.80); 
+    --bg-color60 : rgba(255, 255, 255, 0.60); 
+}
+
+@font-face {
+    font-family: "Amongus";
+    src: url("./asset/amongus\ vector.ttf");
+}
+
+body{
+    display: flex;
+    flex-flow: column ;
+    background-image: url("./asset/fondo\ de\ amongus.png");
+    background-size: cover;
+    font-family: "Amongus" ;
+    align-items: center;
+}
+
+.barra{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--bg-color80); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    transition: all 0.5 ease-in-out;
+}
+
+.a_logo{
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    height: 3.9rem;
+}
+.a_logo:hover{
+    background-color: aliceblue;   
+    text-decoration: line-through red ;
+    border-radius: 20px;
+    padding: 0 20px;
+
+}
+.barra div a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: .5rem;
+    color: #000;
+}
+
+.barra div a:hover{
+    background-color: aliceblue;   
+    text-decoration: line-through red ;
+    color: rgb(29, 28, 28);
+    padding: 6px;
+    border-radius: 15px;
+}
+
+.aside-var {
+    align-self: flex-start;
+    position: fixed;
+    margin-top: 100px;
+    width: 4vw;
+    height: 50vh;
+    background-color: var(--bg-color80);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fab{
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.aside-var div{
+    font-size: 2.5rem;
+    transition: all 0.5s ease-in-out;
+    border-radius:0 15px 15px 0;
+    padding: 5px 0;
+}
+
+.aside-var div:hover{
+    padding-left: 5.5rem;
+    background-color: var(--bg-color80);
+    border-radius: 0 15px 15px 0;
+
+}
+
+._section_cards{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.row1, .row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.--card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    background-color: var(--bg-color60);
+    color: #000;
+    width: 230px;
+    height: 300px;
+}
+
+.--card .div-tit{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.--card .div-des{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1.5rem;
+}
+.--card hr{
+    width: 100%;
+}
+
+.--card img{
+    height: 90%;
+    text-align: center;
+}
+.--card img:hover{
+    height: 106%;
+    
+}
+
+.--card .div-img{
+    height: 200px;
+}
+.--card hr{
+    color: #fff;
+}
+.--card div{
+    height: 2rem;
+}
+
+.--card .div-fot{
+    height: 1rem;
+    padding: 0 10px 20px 10px;
+    width: 100%;
+    display: inherit;
+    justify-content: space-between;
+}
+
+.formu{
+    max-width: 600px;
+    margin: 5rem auto;
+    padding: 3rem;
+    background-color: var(--bg-color60);
+    padding: 1rem;
+}
+
+.formu input,
+.formu textarea{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 2px #000 solid;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.formu .name{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 539px) {
+    .formu div{
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width: 400px){
+    
+}
+
+
+
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.boton button{
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.boton button:hover{
+    background-color: aliceblue;   
+    text-decoration: line-through red ;
+    border-radius: 20px;
+}
+
+.boton h1{
+    font-family: "Amongus";
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.futer{
+    width: 100vw;
+    background-color: var(--bg-color60);
+    height: 5rem;
+}

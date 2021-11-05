@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Tolkien";
+    src: url("./media/tolkien.TTF");
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./media/background.jpg');
+    background-size: cover;
+    height: 130vh;
+    display: block;
+}
+
+.separador{
+    height: 9vh;
+}
+.cabecera{
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.barra{
+    padding: 15px;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.logo{
+    font-family: "Tolkien";
+    color: #000;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.barra ul{
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    margin-right: 50px;
+}
+
+.barra li{
+    transition: all 0.5s ease-in-out;
+    margin: 10px;
+    list-style: none;
+}
+
+.barra li a{
+    font-family: "Tolkien";
+    text-decoration: none;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.barra li a:hover{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
+.central{
+    top: 10vh;
+    width: 90vw;
+    height: 200vh;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin: 10px auto;
+    border-radius: 20px;
+}
+.central img{
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.central .wiki_info{
+    display: flex;
+}
+
+.central .wiki_info p{
+    font-weight: bold;
+    border: 1px solid #000 ;
+    box-shadow: 2px 2px 3px #000;
+    margin: 0 10px;
+}
+
+.hr1{
+    margin: 10px 10px;
+}
+
+.seccion2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seccion3 div{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion3 div h3,p{
+    margin: 10px;
+}
+.seccion3 div p{
+    font-weight: bold;
+}
+
+.caja ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.caja ul a{
+    text-decoration: none;
+    color: #000;
+}
+
+.caja ul {
+    transition: all 0.75s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja ul li{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2rem;
+    font-family: "Tolkien";
+}
+
+.caja ul li img{
+    height: 45vh;
+    width: 15vw;
+    border-radius: 30px;
+}
+
+.caja ul li img:hover{
+    height: 50vh;
+    width: 17vw;
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(71, 75, 78, 0.75);
+}
+.fdiv1 p{
+    font-family: "Tolkien";
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.fdiv2 a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.div3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div3 i{
+    width: 100px;
+    height: 75px;
+}
+
+.aside-var{
+    position: fixed;
+    margin-top: 100px;
+    width: 4vw;
+    height: 40vh;
+    background-color: rgba(255, 255, 255, 0.80);
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.aside-var div{
+    font-size: 2.5rem;
+    transition: all 0.5s ease-in-out;
+    border-radius:0 15px 15px 0;
+    padding: 5px 0;
+}
+.aside-var div:hover{
+    padding-left: 6rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.aside-var a{
+    color: #000;
+}
+
+
+
