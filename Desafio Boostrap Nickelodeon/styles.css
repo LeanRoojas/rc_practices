@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Galano";
+    src: url("./img/GalanoGrotesqueSemiBold.otf");
+}
+
+html,body{
+    background-color: #401164;
+}
+
+.publicidad{
+    height: 50vh;
+    width: 100%;
+    background-color: #401164;
+    padding: auto;
+    display: flex;
+    justify-content:center;
+}
+.pub-container{
+    margin: auto;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.banner{
+    height: 90%;
+    width: 100%;
+    background-image: url('./img/banner.jpg');
+    background-size:cover;
+}
+
+.fig{
+    padding: 0;
+    width: 100%;
+    height: 1.rem;
+    background-color: black;
+    color: #fff;
+    font-weight: 800;
+    font-size: .75rem;
+    text-align: center;
+}
+
+header{
+    height: 25vh;
+    width: 100%;
+    color: #fff;   
+}
+
+.row{
+    color: #401164;
+}
+
+.logo{
+    height: 3rem;
+}
+i{
+    font-size: 1.5rem;
+    color: #3d3d3d;
+}
+
+
+@property --offset {
+    syntax: '<length>';
+    inherits: false;
+    initial-value: 0;
+  }
+.cont-item{
+
+    padding: 0 12px;
+    color: white;
+    text-underline-offset: var(--offset, 0.2em);
+    text-decoration: underline 0.15em;
+    transition: --offset 400ms, text-decoration-color 400ms;
+}
+  
+.cont-item:hover{
+    --offset: 2.75em;
+    text-decoration-color: black;
+}
+.item{
+    font-family: "Galano",sans-serif;
+    padding: 0 12px;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #3d3d3d;
+}
+
+.sec1{
+    display: flex;
+    justify-content: center;
+    background-color: #401164;
+}
+
+.sec1m{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.sec1-2{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1-2 > .img1{
+    width: 400px;
+    height: 400px;
+    background-image: url("https://images.viacbs.tech/uri/mgid:arc:content:mundonick.com:1706b128-7c27-4825-b7bc-3f13cc746677?quality=0.7&width=660&height=371&crop=true");
+    background-size:cover;
+}
+
+.sec1-2 > .img2{
+    width: 400px;
+    height: 400px;
+    background-image: url("https://images.viacbs.tech/uri/mgid:arc:content:mundonick.com:9af64b22-856e-45fa-833d-fe0c49b66686?quality=0.7&width=660&height=371&crop=true");
+    background-size:cover;
+}
+.anuncio > p{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.sec-programas{
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #561786;
+    font-size: 28px;
+    font-weight: 900;
+    color: #87e1ed;
+}
+
+.cont-programas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.card-cont{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.carta{
+    width: 250px;
+    background-color: #401164;
+    border-radius: 10px;
+}
+
+.carta img{
+    width: 100%;
+    border-radius: 10px 10px 0 0px ;
+}
+
+
+.carta p{
+    padding: .5rem 0;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.boton{
+    color: white;
+    border: none;
+    background-color: #f66300;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+.sec-grilla{
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #561786;
+
+}
+
+
+.card-program{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #401164;
+    color: #fff;
+    border-radius: 10px;
+}
+.card-program-pub{
+    margin: 3rem;
+    width: 500px;
+    background-color: #561786;
+    color: #fff;
+}
+.card-program-pub p{
+    width: 400px;
+}
+
+.card-program img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-program span{
+    color: #f66300;
+    font-size: 1rem;
+    font-weight: 750;
+    margin: 1rem 0;
+}
+
+.card-program h4{
+    font-weight: 900;
+    margin: 1rem 0;
+}
+.card-program h5{
+    font-weight: 600;
+    margin: 1rem 0;
+
+}
+
+.card-program p{
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.card-program figcaption{
+    color: darkgrey;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.text-cont{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.ultimos-videos{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+    font-weight: 900;
+    color: #87e1ed;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+}
+
+.pie .uno{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background-color: #612490;
+}
+.uno .titulo{
+    font-weight: 900;
+    font-size:32px;
+    padding: 2rem 0;
+    line-height:24px;
+    vertical-align:baseline;
+    letter-spacing:normal;
+    word-spacing:0px;
+
+}
+.uno .frase{
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.pie .dos{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    background-color: #401164;
+}
+
+.terminos{
+    font-family: "Galano";
+    color: #c4afd4;
+}
+
+.iconos i{
+    color: #c4afd4;
+    font-size: 2.5rem;
+    padding: 0 1.5rem;
+}
+
+.copy{
+    color: #c4afd4;
+    font-size: 1rem;
+}
+
